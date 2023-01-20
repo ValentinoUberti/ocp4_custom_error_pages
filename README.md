@@ -40,7 +40,8 @@ oc patch -n openshift-ingress-operator ingresscontroller/default --patch '{"spec
 
 ## Check HAproxy custom error pages existence
 
-
+- ```oc -n openshift-ingress rsh <router_pod> cat /var/lib/haproxy/conf/error_code_pages/error-page-503.http```
+- ```oc -n openshift-ingress rsh <router_pod> cat /var/lib/haproxy/conf/error_code_pages/error-page-404.http```
 
 
 
