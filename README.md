@@ -34,3 +34,18 @@ oc -n openshift-config create configmap custom-error-code-pages --from-file=erro
 oc patch -n openshift-ingress-operator ingresscontroller/default --patch '{"spec":{"httpErrorCodePages":{"name":"custom-error-code-pages"}}}' --type=merge
 ```
 
+## Test
+
+-  oc new-project test-ingress
+-  oc new-app django-psql-example
+
+### 503 error code test
+
+- stop all the application pod
+- curl -vk <route_hostname>
+
+### 404 error code test
+
+- visit a non existing route in the browser
+- curl -vk <non-existing-route>
+
