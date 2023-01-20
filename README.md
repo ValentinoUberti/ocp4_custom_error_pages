@@ -10,7 +10,9 @@ Is it possible to customize 503 and 404 error codes
 - 404
   - returned when the requested route does not exists
 
-Custom error codes must be specified in a config map with the following keys:
+Custom error codes must be specified in a config map.
+
+<b>The files name must be exactly as follow:</b>
 
 - error-page-503.http
 - error-page-404.http
@@ -25,7 +27,7 @@ Custom error code pages must follow the [HAproxy HTTP error page configuration g
 1) Create the config map
 
 ```
-oc -n openshift-config create configmap custom-error-code-pages --from-file=error-page-503.http --from-file=error-page-404.http
+oc -n openshift-config create configmap custom-error-code-pages --from-file=error-page-404.http --from-file=error-page-503.http
 ```
 
 2) Patch the ingress-controller-operator
@@ -33,6 +35,14 @@ oc -n openshift-config create configmap custom-error-code-pages --from-file=erro
 ```
 oc patch -n openshift-ingress-operator ingresscontroller/default --patch '{"spec":{"httpErrorCodePages":{"name":"custom-error-code-pages"}}}' --type=merge
 ```
+
+- Wait for the ingress cluster operator to stop progressing
+
+## Check HAproxy custom error pages existence
+
+
+
+
 
 ## Tests
 
