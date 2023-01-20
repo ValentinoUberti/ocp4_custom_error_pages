@@ -19,7 +19,7 @@ Custom error codes must be specified in a config map.
 
 ## Custom error code format
 
-Custom error code pages must follow the [HAproxy HTTP error page configuration guidelines](https://www.haproxy.com/documentation/hapee/latest/configuration/config-sections/http-errors/)
+Custom error code pages must follow the [HAProxy HTTP error page configuration guidelines](https://www.haproxy.com/documentation/hapee/latest/configuration/config-sections/http-errors/)
 
 
 ## Overall procedure 
