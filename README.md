@@ -1,4 +1,4 @@
-# Docs OCP 4.10 
+# Custom error pages for  OCP 4.9 - 4.12
 https://docs.openshift.com/container-platform/4.10/networking/ingress-operator.html
 
 ## Customizing HAProxy error code response pages

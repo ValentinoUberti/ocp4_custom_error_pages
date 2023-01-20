@@ -8,6 +8,6 @@ Content-Type: text/html
 <html>
    <body>
       <h1>503 Service Unavailable</h1>
-      <p>Sorry, but you are not authorized to view this page.</p>
+      <p>Sorry, but the service you requested is unavailable.</p>
    </body>
 </html>
