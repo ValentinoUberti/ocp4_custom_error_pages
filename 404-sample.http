@@ -1,0 +1,13 @@
+HTTP/1.0 404 Not Found
+Pragma: no-cache
+Cache-Control: private, max-age=0, no-cache, no-store
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>404 Not Found</h1>
+      <p>The requested URL was not found.</p>
+   </body>
+</html>

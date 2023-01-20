@@ -1,0 +1,13 @@
+HTTP/1.0 503 Service Unavailable
+Pragma: no-cache
+Cache-Control: private, max-age=0, no-cache, no-store
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>503 Service Unavailable</h1>
+      <p>Sorry, but you are not authorized to view this page.</p>
+   </body>
+</html>
