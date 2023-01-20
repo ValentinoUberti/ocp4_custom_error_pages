@@ -52,11 +52,11 @@ oc patch -n openshift-ingress-operator ingresscontroller/default --patch '{"spec
 
 ### 503 error code test
 
-- ```stop all the application pod```
+- stop all the application pods
 - ```curl -vk <route_hostname>```
 
 ### 404 error code test
 
-- ```visit a non existing route in the browser```
+- visit a non existing route in the browser
 - ```curl -vk <non-existing-route>```
 
