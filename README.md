@@ -36,16 +36,16 @@ oc patch -n openshift-ingress-operator ingresscontroller/default --patch '{"spec
 
 ## Test
 
--  oc new-project test-ingress
--  oc new-app django-psql-example
+-  ```oc new-project test-ingress```
+-  ```oc new-app django-psql-example```
 
 ### 503 error code test
 
-- stop all the application pod
-- curl -vk <route_hostname>
+- ```stop all the application pod```
+- ```curl -vk <route_hostname>```
 
 ### 404 error code test
 
-- visit a non existing route in the browser
-- curl -vk <non-existing-route>
+- ```visit a non existing route in the browser```
+- ```curl -vk <non-existing-route>```
 
